@@ -14,7 +14,6 @@ plot1 = covid %>%
 
 
 ## gonna do something here with the dates to make this prettier.
-## weird that the scales are so different across sites
 plot2 = covid %>%
   ggplot(aes(date, concentration, group = interaction(county, wwtp_id))) +
   geom_line() +
